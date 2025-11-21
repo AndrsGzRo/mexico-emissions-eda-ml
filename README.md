@@ -7,6 +7,7 @@ Análisis Exploratorio de Emisiones Contaminantes reportadas por entidades del p
 |```images```|Carpeta que incluye las visualizaciones elaboradas|
 |```01_EDA.ipynb```| Notebook de análisis|
 |```README.md```|Descripción del proyecto|
+|```data-2025-11-19.csv```| Datos sin limpiar|
 ## Descripción general
 Este proyecto realzia un **Análisis Exploratorio de Datos (EDA)** sobre el inventario de emisiones atmosféricas en México. 
 Se busca responder lo siguiente:
