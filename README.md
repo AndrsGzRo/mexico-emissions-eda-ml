@@ -28,7 +28,6 @@ Se generaron múltiples visualizaciones, incluyendo violinplots, boxplots, heatm
 . **Manejo de valores faltantes y  duplicados**
   - Eliminación de valores faltantes
 ## Análisis Exploratorio de Datos (EDA)
-### Distribución de Contaminantes
 Gráficos utilizados
 - Boxplots
 - Violinplots
@@ -48,7 +47,47 @@ Estos gráficos permiten observar:
 ### Análisis combinado
 - **Bubble chart**: Estado x tipo de fuente x emisiones
 ## Visualizaciones
-**Distribución de los contaminantes** 
+### Distribución de Contaminantes
+![Distribución de Contaminantes](images/EDA_Histograma_COntaminantes.png)
+
+### Violinplots de contaminantes por tipo de fuente
+![Violinplot](images/EDA_Violinplot_Contaminantes_Fuente.png)
+
+### Top 10 de Estados más Contaminantes
+![Estados más contaminantes](images/EDA_Entidades_10_contaminantes.png)
+
+### Top 10 Municipios más Contaminantes
+![Municipios más contaminantes](images/EDA_Municipios_Contaminantes.png)
+
+### Correlación entre contaminantes
+![Correlación](images/EDA_Heatmap_contaminantes.png)
+
+### Bubble Chart: Estado x tipo de fuente x emisiones
+![Bubble Chart](images/EDA_Bubble_Chart_Fuente_Estado.png)
+
+### Top 10 Estados por Contaminante
+![](images/EDA_Top10_Contaminantes_Estados.png) 
+
+### Top 5 de Estados con más Emisiones por Tipo de Fuente
+![](images/EDA_Estados_Fuente.png) 
+
+### Radar Charts: Tipo de Fuente y Contaminantes
+## Resultados Clave
+- Existen estados que destacan de forma consistente como los mayores emisores como:
+  - Estado de México
+  - Veracruz
+  - Jalisco
+  - Chihuahua
+  - Michoacán
+- Los contaminantes presentan distribuciones con colas largas y con muchos outliers, por lo que, es necesario usar logaritmos para visualizar su comportamiento.
+- Las fuentes que más contaminan son:
+  1. Móviles de Carretera
+  2. Área
+  3. Fijas
+  4. Móviles No Carretera
+- Hay una fuerte correlación entre PM10 y PM2.5
+- La mayoría de los emisiones móviles carretera son de contaminantes NOx y CO.
+- Las fuentes de área emiten, mayoritariamente, COV, NH3, PM10 y PM2.5 
 ## Tecnologías Utilizadas
 - Python 3.x
 - Pandas
@@ -56,7 +95,6 @@ Estos gráficos permiten observar:
 - Matplotlib
 - Seaborn
 - Jupyter Notebook 
-## Resultados Clave
 ## Fuente
 - [Inventario de emisiones de contaminantes atmosféricos por municipio y fuente, 2018 - SEMARNAT](https://datos.gob.mx/dataset/calidad_aire_emisiones_contaminantes/resource/70dfeb69-065b-4ed4-8922-505602666250)
 ## Autor
